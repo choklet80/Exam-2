@@ -8,11 +8,18 @@
     <link rel="stylesheet" href="sass/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" type="image/svg" href="img/home-solid.svg"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <!-- // Add the new slick-theme.css if you want the default styling -->
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    
     <title>Monticello</title>
 </head>
 <body>
-        <header class="header">
+    
+        <header id="head" class="header">
             
             <nav class="nav">
 
@@ -45,13 +52,13 @@
                     </a>
                     
                     <div class="s-links">
-                        <a href="" class="s-links__social">
+                        <a href="#" class="s-links__social">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="" class="s-links__social">
+                        <a href="#" class="s-links__social">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="" class="s-links__social">
+                        <a href="#" class="s-links__social">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
@@ -65,24 +72,24 @@
                     We make the world's beautiful every day
                 </p>
             </div>
-            <nav id="main-page-navigation" class="main-page-navigation">
-                <a href="" class="main-page-navigation__dot main-page-navigation__dot--active">
+            <nav class="main-page-navigation">
+                <a href="#head" class="main-page-navigation__dot main-page-navigation__dot--active">
                     
                 </a>
                 <a href="#wwd" class="main-page-navigation__dot">
                     
                 </a>
-                <a href="" class="main-page-navigation__dot">
+                <a href="#news" class="main-page-navigation__dot">
                     
                 </a>
-                <a href="" class="main-page-navigation__dot">
+                <a href="#gall" class="main-page-navigation__dot">
                     
                 </a>
-                <a href="" class="main-page-navigation__dot">
+                <a href="#contact" class="main-page-navigation__dot">
                     
                 </a>
             </nav>
-            <a href="" class="down-arrow-wrapper">
+            <a href="#wwd" class="down-arrow-wrapper">
                     <i class="fas fa-chevron-down"></i>
             </a>
         </header>
@@ -90,8 +97,26 @@
    
 
     <main id="wwd" class="what-we-do">
+
+        <nav class="main-page-navigation">
+            <a href="#head" class="main-page-navigation__dot  main-page-navigation__dot--dark">
+                
+            </a>
+            <a href="#wwd" class="main-page-navigation__dot main-page-navigation__dot--dark main-page-navigation__dot--dark--active">
+                
+            </a>
+            <a href="#news" class="main-page-navigation__dot main-page-navigation__dot--dark">
+                
+            </a>
+            <a href="#gall" class="main-page-navigation__dot main-page-navigation__dot--dark">
+                
+            </a>
+            <a href="#contact" class="main-page-navigation__dot main-page-navigation__dot--dark">
+                
+            </a>
+        </nav>
         <div class="small-line"></div>
-        <h2 class="what-we-do__caption">
+        <h2 class="section__caption">
            what we do 
         </h2>
 
@@ -113,9 +138,9 @@
                     Increasing prosperity in our lives can be accomplished by having
                     the right frame of mind. The truth is, our thoughts are very powerful.
                 </p>
-                <div class="btn">
+                <button class="btn fill">
                     more details
-                </div>
+                </button>
                 <p class="center-block__location">
                     <i class="fas fa-map-marker-alt"></i>
                     New York City, United States - 1776 feet
@@ -135,9 +160,9 @@
                     Increasing prosperity in our lives can be accomplished by having
                     the right frame of mind. The truth is, our thoughts are very powerful.
                 </p>
-                <div class="btn">
+                <button class="btn fill">
                     more details
-                </div>
+                </button>
                 <p class="center-block__location">
                     <i class="fas fa-map-marker-alt"></i>
                     Hong Kong - 1588 Feet
@@ -153,22 +178,307 @@
 
     </main>
 
-    <section class="news">
+    <section id="news" class="news">
+        <nav class="main-page-navigation">
+            <a href="#head" class="main-page-navigation__dot ">
+                
+            </a>
+            <a href="#wwd" class="main-page-navigation__dot">
+                
+            </a>
+            <a href="#news" class="main-page-navigation__dot main-page-navigation__dot--active">
+                
+            </a>
+            <a href="#gall" class="main-page-navigation__dot">
+                
+            </a>
+            <a href="#contact" class="main-page-navigation__dot">
+                
+            </a>
+        </nav>
+        <div class="small-line small-line--lite"></div>
+        <h2 class="section__caption  section__caption--lite">
+           latest news 
+        </h2>
+        <div class="news__container">
+            <div class="card ">
+                <img class="card__img" src="img/issac-dunn.png" alt="house-img">
 
+                <div class="card__information">
+                    <h3 class="card__caption">
+                        See The Unmatched Beauty Of The Great.
+                    </h3>
+                    <p class="card__text">
+                        Free directories: directories are perfect for customers that are... searching for
+                    </p>
+                </div>
+                <div class="card__footer">
+                    <div class="card__writer-pic">
+                        <img src="img/isaac_dunn-photo.png" alt="Issac_Dunn">
+                    </div>
+                    <div class="card__writer-name-and-date">
+                        <p class="card__writer-name">
+                            Issac Dunn
+                        </p>
+                        <p class="card__date">
+                            09 Feb 2017
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card__img" src="img/dominic-freeman.png" alt="house-img">
+
+                <div class="card__information">
+                    <h3 class="card__caption">
+                        Effective Advertising Pointers.
+                    </h3>
+                    <p class="card__text">
+                        Having a home based business is a wonderful asset to your life.
+                    </p>
+                </div>
+                <div class="card__footer">
+                    <div class="card__writer-pic">
+                        <img src="img/dom_free-pic.png" alt="Issac_Dunn">
+                    </div>
+                    <div class="card__writer-name-and-date">
+                        <p class="card__writer-name">
+                            Dominic Freeman
+                        </p>
+                        <p class="card__date">
+                            24 Apr 2017
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card ">
+                <img class="card__img" src="img/alice-ward.png">
+
+                <div class="card__information">
+                    <h3 class="card__caption">
+                        Hypnotize Yourself Into The Ghost.
+                    </h3>
+                    <p class="card__text">
+                        There are many things that are important to catalog design.... 
+                    </p>
+                </div>
+                <div class="card__footer">
+                    <div class="card__writer-pic">
+                        <img src="img/alice_ward-pic.png" alt="Issac_Dunn">
+                    </div>
+                    <div class="card__writer-name-and-date">
+                        <p class="card__writer-name">
+                            Alice Ward
+                        </p>
+                        <p class="card__date">
+                            30 Dec 2017
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card ">
+                <img class="card__img" src="img/issac-dunn.png" alt="house-img">
+
+                <div class="card__information">
+                    <h3 class="card__caption">
+                        See The Unmatched Beauty Of The Great.
+                    </h3>
+                    <p class="card__text">
+                        Free directories: directories are perfect for customers that are... searching for
+                    </p>
+                </div>
+                <div class="card__footer">
+                    <div class="card__writer-pic">
+                        <img src="img/isaac_dunn-photo.png" alt="Issac_Dunn">
+                    </div>
+                    <div class="card__writer-name-and-date">
+                        <p class="card__writer-name">
+                            Issac Dunn
+                        </p>
+                        <p class="card__date">
+                            09 Feb 2017
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card__img" src="img/dominic-freeman.png" alt="house-img">
+
+                <div class="card__information">
+                    <h3 class="card__caption">
+                        Effective Advertising Pointers.
+                    </h3>
+                    <p class="card__text">
+                        Having a home based business is a wonderful asset to your life.
+                    </p>
+                </div>
+                <div class="card__footer">
+                    <div class="card__writer-pic">
+                        <img src="img/dom_free-pic.png" alt="Issac_Dunn">
+                    </div>
+                    <div class="card__writer-name-and-date">
+                        <p class="card__writer-name">
+                            Dominic Freeman
+                        </p>
+                        <p class="card__date">
+                            24 Apr 2017
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card ">
+                <img class="card__img" src="img/alice-ward.png">
+
+                <div class="card__information">
+                    <h3 class="card__caption">
+                        Hypnotize Yourself Into The Ghost.
+                    </h3>
+                    <p class="card__text">
+                        There are many things that are important to catalog design.... 
+                    </p>
+                </div>
+                <div class="card__footer">
+                    <div class="card__writer-pic">
+                        <img src="img/alice_ward-pic.png" alt="Issac_Dunn">
+                    </div>
+                    <div class="card__writer-name-and-date">
+                        <p class="card__writer-name">
+                            Alice Ward
+                        </p>
+                        <p class="card__date">
+                            30 Dec 2017
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </section>
 
-    <section class="gallery">
-
+    <section id="gall" class="gallery">
+        <nav class="main-page-navigation">
+            <a href="#head" class="main-page-navigation__dot  main-page-navigation__dot--dark">
+                
+            </a>
+            <a href="#wwd" class="main-page-navigation__dot main-page-navigation__dot--dark ">
+                
+            </a>
+            <a href="#news" class="main-page-navigation__dot main-page-navigation__dot--dark">
+                
+            </a>
+            <a href="#gall" class="main-page-navigation__dot main-page-navigation__dot--dark main-page-navigation__dot--dark--active">
+                
+            </a>
+            <a href="#contact" class="main-page-navigation__dot main-page-navigation__dot--dark">
+                
+            </a>
+        </nav>
+        <div class="small-line"></div>
+        <h2 class="section__caption">
+           gallery 
+        </h2>
+        <div class="gallery__container">
+            <div class="gallery__pic--big">
+                <img src="img/360.png" alt="">
+            </div>
+            <div class="gallery__pics">
+                <div>
+                    <div class="gallery__pic--small gallery__pic--up-m"><img src="img/gallery-1.png" alt=""></div>
+                    <div class="gallery__pic--small gallery__pic--down-m"><img src="img/gallery-2.png" alt=""></div>
+                </div>
+                <div>
+                    <div class="gallery__pic--small gallery__pic--up-m"><img src="img/gallery-3.png" alt=""></div>
+                    <div class="gallery__pic--small gallery__pic--down-m"><img src="img/gallery-4.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="gallery__container">
+            <div class="btn fill">
+                see more
+            </div>
+        </div>
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
+        <nav class="main-page-navigation main-page-navigation--contact">
+            <a href="#head" class="main-page-navigation__dot">
+                
+            </a>
+            <a href="#wwd" class="main-page-navigation__dot">
+                
+            </a>
+            <a href="#news" class="main-page-navigation__dot">
+                
+            </a>
+            <a href="#gall" class="main-page-navigation__dot">
+                
+            </a>
+            <a href="#contact" class="main-page-navigation__dot  main-page-navigation__dot--active">
+                
+            </a>
+        </nav>
+        <div id="map" class="map"></div>
 
+        <form class="form">
+            <div class="small-line"></div>
+            <h2 class="section__caption">
+                get in touch
+            </h2>
+            <div class="form__contact">
+                <div>
+                    <p class="form__data">
+                        <i class="fas fa-map-marker-alt"></i> 91 Nolan Extensions Suite 670
+                    </p>
+                    <a href="tel:+001 356-868-2454" class="form__data">
+                        <i class="fas fa-phone-alt"></i> +001 356-868-2454
+                    </a>
+                    <a href="mailto: choklet870@gmail.com" class="form__data">
+                        <i class="fas fa-inbox"></i> choklet870@gmail.com
+                    </a>
+                    <p class="form__data">
+                        <i class="far fa-clock"></i> From 07:05AM to 19:30PM
+                    </p>
+                </div>
+                <div class="form__user-data">
+                    <input required class="form__input" type="text" name="name" id="name" placeholder="Name/Surname">
+                    <input required class="form__input" type="email" name="email" id="email" placeholder="Email">
+                    <button type="submit" class="fill btn btn--submit">submit</button>
+                </div>
+            </div>
+        </form>        
     </section>
 
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__logo-and-copy">
+                <img src="img/Logo.png" alt="Logo">
+                <p class="footer__copy">
+                    Copyrights © 2017 | Monticello Group Made with <i class="fas fa-heart"></i> by Ga Huy
+                </p>
+            </div>
+            <div class="s-links">
+                <a href="" class="s-links__social">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="s-links__social">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="s-links__social">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.6.0/build/ol.js"></script>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script
     src="https://kit.fontawesome.com/3ae74acd04.js"
     crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -12,13 +12,6 @@
     }
 }
 
-.small-line{
-    background-color: #2c4058;
-    width: 100px;
-    height: 1px;
-    margin: 0 auto;
-}
-
 .center-block{
     max-width: 1170px;
     width: 100%;
@@ -37,7 +30,9 @@
         width: 100%;
         min-height: 470px;
         background-color: #55b7ff;
-
+        @media screen and(max-width:1600px) {
+            display: none;
+        }
         &--left{
             position: absolute;
             left: unset;

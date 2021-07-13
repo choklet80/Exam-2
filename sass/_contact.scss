@@ -1,0 +1,65 @@
+.map{
+    height: 700px;
+    
+}
+
+.contact{
+    position: relative;
+}
+
+.form{
+    max-width: 770px;
+    width: 100%;
+    min-height: 450px;
+    background-color: white;
+    position: absolute;
+    right: 50%;
+    margin-right: -385px;
+    margin-top: -300px;
+    color: #2c4058;
+    font-size: 18px;
+    padding: 60px 85px 0;
+    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.2);
+    a{
+        color: #2c4058;   
+        display: block; 
+    }
+
+    &__contact{
+        padding-top: 60px;
+        display: flex;
+    }
+    &__data:not(:first-child){
+        margin-top: 28px;
+    }
+
+    &__data i{
+        color: #7e5aff;
+    }
+
+    &__input{
+        display: block;
+        padding: 10px 0;
+        border: none;
+        font-size: 18px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0);
+        transition: border-bottom 0.2s;
+    }
+    &__input:not(:first-child){
+        margin-top: 20px;
+    }
+    &__input::placeholder{
+        font-size: 18px;
+    }
+    &__input:focus-visible{
+        outline: none;
+        border-bottom: 1px solid black;
+    }
+
+    &__user-data{
+        padding-left: 50px;
+        position: relative;
+        max-width: 310px;
+        width: 100%;
+    }
+}

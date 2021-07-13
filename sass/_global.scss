@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 a{
     text-decoration: none;
     color: white;
@@ -12,4 +16,71 @@ a{
 body{
     font-family: 'Roboto', sans-serif;
     color: white;
+}
+
+.section{
+    
+    &__caption{
+        text-align: center;
+        margin-top: 40px;
+        font-size: 44px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: #2c4058;
+        &--lite{
+            color: #ffffff;
+        }
+    }
+}
+
+.small-line{
+    background-color: #2c4058;
+    width: 100px;
+    height: 1px;
+    margin: 0 auto;
+
+    &--lite{
+        background-color: #ffffff;
+    }
+}
+
+.main-page-navigation{
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    margin-top: -103px;
+    height: 205px;
+    width: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 100;
+    &__dot{
+        cursor: pointer;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        border: 1px solid white;
+        
+        &--active{
+            background-color: white;
+        }
+        &:hover{
+            background-color: white;
+        }
+        &--dark{
+            border: 1px solid rgb(102, 102, 102);
+            &:hover{
+                background-color: rgb(102, 102, 102);
+            }
+            &--active{
+                background-color: rgb(102, 102, 102);
+            }
+        }
+    }
+
+    &--contact{
+        margin-top: -50px;
+    }
+    
 }

@@ -1,0 +1,38 @@
+.gallery{
+    min-height: 100vh;
+    padding-top: 140px;
+    margin-bottom: 50px;
+    position: relative;
+    &__container{
+        max-width: 1170px;
+        margin: 0 auto;
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__pics{
+        display: flex;
+    }
+
+    &__pic{
+
+        &--big{
+            max-width: 630px;
+            height: 450px;
+        }
+        &--small{
+            max-width: 285px;
+            height: 214px;
+        }
+
+        &--down-m{
+            margin: 20px 0 0 20px;
+        }
+
+        &--up-m{
+            margin: 0px 0 0 20px;
+        }
+    }
+}
+
