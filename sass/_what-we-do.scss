@@ -1,0 +1,97 @@
+.what-we-do{
+    min-height: 100vh;
+    color: #2c4058;
+    padding-top: 100px;
+    position: relative;
+    &__caption{
+        text-align: center;
+        margin-top: 40px;
+        font-size: 44px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+    }
+}
+
+.small-line{
+    background-color: #2c4058;
+    width: 100px;
+    height: 1px;
+    margin: 0 auto;
+}
+
+.center-block{
+    max-width: 1170px;
+    width: 100%;
+    min-height: 663px;
+    margin: 0 auto;
+    padding-top: 50px;
+    
+    display: flex;
+    position: relative;
+    &__pic-bg{
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin-left: -215px;
+        max-width: 585px;
+        width: 100%;
+        min-height: 470px;
+        background-color: #55b7ff;
+
+        &--left{
+            position: absolute;
+            left: unset;
+            right: 0;
+            top: 0;
+            margin-right: -215px;
+            max-width: 585px;
+            width: 100%;
+            min-height: 470px;
+            background-color: #7e5aff;
+        }
+    }
+    &__pic{
+        max-width: 585px;
+        width: 100%;
+        height: 470px;
+        margin: 20px;
+        z-index: 1;
+        background: url(../img/wwd-first.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &--trade{
+            background: url(../img/commerce-center.png);
+        }
+    }
+
+    &__caption{
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    &__center-name{
+        text-transform: uppercase;
+        font-size: 44px;
+    }
+    &__location{
+        font-style: italic;
+    }
+
+    &__info{
+        padding-top: 60px;
+        margin: 0 25px;
+    }
+
+    &__desc{
+        line-height: 25px;
+        opacity: 0.9;
+        padding: 28px 0;
+        max-width: 400px;
+    }
+
+    &__location{
+        margin-top: 65px;
+    }
+}
+
